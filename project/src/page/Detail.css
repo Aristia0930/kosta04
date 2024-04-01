@@ -1,0 +1,193 @@
+.main_Detail{
+    background-color: #EEEEEE;
+}
+.product::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.product {
+    margin: 80 0px;
+
+}
+
+.product .left {
+
+    width: 100%;
+    z-index: 0;
+}
+
+.product .left :nth-child(1) {
+    width: 100%;
+    height: 600px;
+}
+
+
+.product .left .slide .product_img {
+    position: relative;
+    width: 100%;
+    height: 600px; /* 이미지 높이 설정 */
+    background-size: cover;
+    background-position: center -500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.product .left .slide .icon {
+    position: absolute;
+    justify-content: center;
+    /* display: flex; */
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.product .left .slide .icon .icon_array{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product .left .slide .icon .icon_left{
+    float: left;
+    cursor: pointer;
+    width: 10%; /* 아이콘 버튼의 너비를 부모 요소의 너비의 10%로 설정 */
+    max-width: 60px; /* 최대 너비 설정 */
+    height: auto; /* 높이 자동 조정 */
+    color: white;
+    
+}
+
+.product .left .slide .icon .icon_right {
+    float: right;
+    cursor: pointer;
+    width: 10%; /* 아이콘 버튼의 너비를 부모 요소의 너비의 10%로 설정 */
+    max-width: 60px; /* 최대 너비 설정 */
+    height: auto; /* 높이 자동 조정 */
+    color: white;
+}
+
+.product .left .slide .icon .icon_left:hover,
+.product .left .slide .icon .icon_right:hover {
+    background-color: #DDDDDD;
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+}
+
+/* 상세페이지 오른쪽 */
+.product .right{
+    margin: 0 200px;
+    padding: 40px 0 0 0;
+}
+
+.product .right .product_info{
+    padding: 20px;
+}
+
+.product .right .product_info .title_info{
+    margin: 5px;
+}
+.product .right .product_info .title_info h2{
+    margin: 0 0 20px 0;
+    font-size: 2.25rem;
+}
+.product .right .product_info .title_info p{
+    margin: 20px 0;
+    padding: 0;
+    font-size: 1.15rem;
+}
+
+.product .right .product_info .product_explain ul{
+    list-style-type: "- ";
+    margin: 0;
+    padding: 0 10px;
+}
+
+.product .right .product_info .line{
+    border-top: 1px solid #DDDDDD;
+    width: 100%;
+    margin: 20px 0;
+    /* margin-bottom: 30px; */
+}
+
+ .product .right .amount{
+    margin: 0 0 0px 10px;
+    align-items: center;
+ }
+
+ .product .right .amount p{
+    margin-bottom: 5px;
+ }
+
+.product .right .amount .amount_btn{
+    margin-right: 5px;
+    display: inline-block;
+    background-color: #F1F6F9;
+    border: 1px solid #9BA4B5;
+    border-radius: 2px;
+    width: 2.5rem;
+    height: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.product .right .amount span {
+    /* float: left; */
+    margin: 5px;
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+}
+
+
+.product .right .sum{
+    margin: 0 0 20px 10px;
+    justify-content: space-between;
+}
+
+.product .right .sum .sum_price{
+    float: left;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.product .right .sum .total_info{
+    float: right;
+    margin-right: 10px;
+}
+
+.product .right .sum .total_count{
+    margin-right: 5px;
+}
+
+
+.product .right .sum .h_line{
+    border-right: 2px solid #DDDDDD;
+    margin-right: 5px;
+}
+
+.product .right .sum .total_price{
+    font-size: 1.25rem;
+}
+
+.product .right .btn{
+    margin-top: 150px;    
+}
+
+.product .right .btn .btn_reservation{
+    border: 2px solid #9BA4B5;
+    border-radius: 2px;
+    background-color: #F1F6F9;
+    width: 30%;
+    height: 40px; 
+    display: block; /* 가로 정렬을 위해 블록 요소로 설정 */
+    box-sizing: border-box;
+    margin: 0 auto;
+    cursor: pointer;   
+    font-size: 1.05rem;
+}
+
+
+
